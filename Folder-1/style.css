@@ -1,0 +1,14 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-floating {
+    margin-top: 200px;
+    
+}
