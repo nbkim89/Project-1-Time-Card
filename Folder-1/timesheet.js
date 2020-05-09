@@ -16,12 +16,12 @@ function currentTime(){
 
 //function & event listener for punching IN/OUT 
 
-$(".btn-floating").on('click', function(){
-    var punchIn = 
+// $(".btn-floating").on('click', function(){
+//     var punchIn = 
 
     
 
-})
+// })
 
 
 
