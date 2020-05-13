@@ -17,6 +17,13 @@
     margin-left: 20px;
 }
 
+.currentTime {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
 body {
     background-color: rgb(0, 0, 0);
     background-image: url("cheetah_17.jpg");
@@ -26,7 +33,9 @@ body {
     background-repeat: no-repeat;
 }
 
-.btn-floating {
-    position: relative;
-    margin-top: 200px;
+    
+
+p{
+    color: black;
 }
+
