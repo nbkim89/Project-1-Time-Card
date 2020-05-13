@@ -25,6 +25,9 @@ currentTime()
 $(".btn-floating-green").on('click', function () {
     
     clockInDisplay.html("Clock IN : "+moment().format("dddd MMMM Do , h:mm A"));
+
+
+    console.log('Hello world')
     
     
 
