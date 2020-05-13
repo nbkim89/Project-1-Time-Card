@@ -24,6 +24,10 @@
     font-weight: bolder;
     font-size: 30px;
 }
+.calander{
+    align-items: center;
+
+}
 
 
 body {
@@ -42,3 +46,19 @@ p{
 
 }
 
+.datepicker-date-display {
+    background-color: orange !important;
+}
+.datepicker-calendar-container {
+    color: orange;
+}
+.is-today {
+    color: orange !important;
+
+}
+.datepicker-table td.is-selected {
+    background: gray !important;
+}
+.datepicker-cancel, .datepicker-done {
+    color: silver;
+}
