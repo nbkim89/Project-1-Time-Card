@@ -23,24 +23,34 @@ currentTime()
 
 
 $(".btn-floating-green").on('click', function () {
+    var clockInTime = moment().format("dddd MMMM Do , h:mm A");
     
-    clockInDisplay.html("Clock IN : "+moment().format("dddd MMMM Do , h:mm A"));
+    clockInDisplay.text("Clock IN:"+ clockInTime);
 
+    console.log(localStorage);
 
-    console.log('Hello world')
-    
-    
+    //var clockInTime = moment().format("dddd MMMM Do , h:mm A");
 
+    localStorage.setItem('green', clockInTime );
 
 });
 
 
 
 $(".btn-floating-red").on('click', function() {
-    clockOutDisplay.html("Clock OUT : "+moment().format("dddd MMMM Do , h:mm A"));
+    var clockOutTime = moment().format("dddd MMMM Do , h:mm A");
+    
+    
+    clockOutDisplay.text("Clock OUT" + clockOutTime);
+    
+    localStorage.setItem('red', clockOutTime);
 
 
 });
+
+
+
+
 
 
 
