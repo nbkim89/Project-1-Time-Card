@@ -29,18 +29,6 @@
 
 }
 
-
-body {
-    background-color: rgb(0, 0, 0);
-    background-image: url("cheetah_17.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-}
-
-    
-
 p{
     color: black;
 
@@ -61,4 +49,13 @@ p{
 }
 .datepicker-cancel, .datepicker-done {
     color: silver;
+}
+
+.card-group {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    border: solid;
+    border-color: #F57C00;
 }
