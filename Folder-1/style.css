@@ -29,18 +29,6 @@
 
 }
 
-
-body {
-    background-color: rgb(0, 0, 0);
-    background-image: url("cheetah_17.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-}
-
-    
-
 p{
     color: black;
 
@@ -62,3 +50,47 @@ p{
 .datepicker-cancel, .datepicker-done {
     color: silver;
 }
+
+.card-group {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    border: solid;
+    border-color: #F57C00;
+}
+
+.tcontainer {
+    width: 100%;
+    overflow: hidden;
+  }
+   
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%; 
+    background-color: #eee;
+  }
+  
+  
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused; 
+  }
+  
+  
+  .ticker-item{
+    display: inline-block; 
+    padding: 0 2rem;
+  }
