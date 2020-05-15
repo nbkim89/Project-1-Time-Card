@@ -48,6 +48,14 @@ $(".btn-floating-red").on('click', function() {
 
 });
 
+//Added function for calander pop up.
+$(document).ready(function(){
+    $('.datepicker').datepicker({
+        yearRange: 1
+    });
+}); 
+
+
 
 
 
