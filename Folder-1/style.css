@@ -68,7 +68,7 @@ p{
   .ticker-wrap {
     width: 100%;
     padding-left: 100%; 
-    background-color: #eee;
+    background-color: red;
   }
   
   
@@ -93,4 +93,5 @@ p{
   .ticker-item{
     display: inline-block; 
     padding: 0 2rem;
+    color: white;
   }

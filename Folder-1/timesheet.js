@@ -73,7 +73,17 @@ function getCovidStats() {
 	setTimeout(getCovidStats, 43200000) // update every 12 hours
 }
 
+var queryURL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=69a98bee020a4adba03f0f2f3cfe093b"
 
+$.ajax({
+	url: queryURL,
+	method: "GET"
+  }).then(function(response) {
+
+	console.log(response);
+
+	$(".ticker-item").text(response.articles[0].content);
+});
 
 
 
