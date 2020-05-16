@@ -55,7 +55,44 @@ $(document).ready(function(){
     });
 }); 
 
+window.onload = function() {
+	getCovidStats();
+}
 
+function getCovidStats() {
+	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/225')
+	.then(function(resp) { return resp.json() })
+	.then(function(data) {
+		let population = data.location.country_population;
+		let update = data.location.last_updated;
+		let confirmedCases = data.location.latest.confirmed;
+		let deaths = data.location.latest.deaths;
+
+        document.getElementById('recovery').innerHTML = deaths.toLocaleString('en');
+        document.getElementById('cases').innerHTML = confirmedCases.toLocaleString('en');
+        document.getElementById('population').innerHTML = population.toLocaleString('en');
+        document.getElementById('update').innerHTML = update.substr(0, 10);
+		
+
+
+	})
+	.catch(function() {
+		console.log("error");
+	})
+	setTimeout(getCovidStats, 43200000) // update every 12 hours
+}
+
+var queryURL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=69a98bee020a4adba03f0f2f3cfe093b"
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+  }).then(function(response) {
+
+	console.log(response);
+
+	$(".ticker-item").text(response.articles[0].content);
+});
 
 
 
